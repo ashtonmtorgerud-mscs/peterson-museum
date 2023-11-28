@@ -1,0 +1,204 @@
+html{
+  background-color: rgba(230, 216, 241, 0.95 /*0.897*/);
+  display: block;
+  /* background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6e/PetersonStation.jpg);https://images.squarespace-cdn.com/content/v1/5c47e5fd365f02e0856ce7ce/1557065617237-F623GP0X0SF7ZO732JSQ/peterson-2019-calendar-06.jpg?format=2500w */
+  background-size: cover;
+  min-height: 100vh;
+}
+
+
+.Header--top{
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  height: 85px;
+}
+
+
+
+@media (min-width:1000px){
+
+}
+
+.Header-inner--top, .Header-nav-folder, .Header-nav, .Header-nav--primary{
+  margin-left: 15px;
+  margin-top: 0.5px;
+}
+
+@media (max-width:700px){
+  .Header-nav-folder-title {
+    display: none;
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+/*CSS for the text bar*/
+.Header-nav-inner{
+  margin-top: 6px;
+  margin-left: 215px;
+}
+
+.Header-nav-item{
+  margin-left: 0px;
+  padding-bottom: 20px;
+  display: flex;
+  float: left;
+}
+
+@media (max-width:700px){
+  .Header-nav-item {
+    display: none;
+  }
+}
+
+
+.Header-inner, .Header-inner--top{
+  text-align: center;
+  display: flex;
+  float: left;
+  padding: 20px 40px 40px 20px;
+}
+
+
+a{
+  padding: 6px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 16.5px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  
+}
+
+/* Make hovered links glow */
+a:hover{
+  text-decoration: none;
+  /* color: rgb(251, 51, 51); */
+  color: rgb(250, 60, 80);
+}
+
+
+
+/* Logo controls */
+.Header-branding-logo {
+  display: block;
+  width: 200px;
+  height: auto;
+  margin-left: 0px;
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  margin-right: 15px;
+  margin-top: -5.5px;
+}
+
+@media (max-width:700px){
+  .Header-branding-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+@media (min-width:1000px){
+
+}
+
+
+
+
+
+/*Hidden Stuff*/
+.Header-nav-folder{
+  display: none;
+}
+
+.Header-nav-item:hover .Header-nav-folder{
+  display: inline-flex;
+  flex-direction: column;
+  text-align: left;
+  position: absolute;
+  color: black;
+  padding: 12px 16px;
+  background-color: rgba(247, 243, 227, 0.8);
+  margin-inline-start: 0px;
+  margin-top: 16px;
+  animation-name: dropnavbarappear;
+  animation-duration: 0.25s;
+  animation-fill-mode: forwards;
+}
+
+
+/* The animation code */
+@keyframes dropnavbarappear {
+  0%   {  margin-top: 48px; opacity: 0;}
+  100% {  margin-top: 32px; opacity: 100%;}
+}
+
+
+
+
+/* .Header-nav-folder{
+  display: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-align: left;
+
+
+  color: black;
+  background-color: rgba(247, 243, 227, 0.8);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  overflow: hidden;
+  position: absolute;
+}
+
+.Header-nav-item:hover .Header-nav-folder{
+  display: inline-block;
+  position: absolute;
+  vertical-align: bottom;
+  text-wrap: nowrap;
+  margin: 0px;
+} */
+
+
+
+
+/*Search Button*/
+
+
+.Header-search{
+    position: fixed;
+    right: 15px;
+    top: 10px;
+}
+
+.Header-search-form-submit{
+  /* Chie Image:
+  background-image: url(https://w0.peakpx.com/wallpaper/384/653/HD-wallpaper-chie-satonaka-house-home-video-game-game-close-up-anime-yukata-hot-anime-girl-female-persona-4-brown-hair-persona-four-kimono-sexy-brown-eyes-rpg-short-hair-cute-girl-fan.jpg);*/
+  background-color: transparent;
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png);
+  background-size: 100%;
+  outline: 0;
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+  display: flex;
+  float: right;
+  margin-top: 24px;
+  margin-right: 48px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
