@@ -1,31 +1,84 @@
-.video-container{
-    margin-left: 8vw;
-    margin-right: 40vw;
-    width: 52vw;
-    padding: 0;
-    float: left;
+.root{
+    display: inherit;
 }
 
 
-.video-container video{
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0;
+video{
+    width: 66vw;
+    display: inline-block;
+    margin-top: 5vh;
+    position: relative;
+    margin-left: 5vw;
+}
+
+.flex-container{
+    margin-top: -100px;
+    margin: 0px;
+    display: flex;
+}
+
+
+.video-panel{
+    display: inline-block;
+    width: 75%;
+    background-color: lightcoral;
+    height: 100vh;
+    
+}
+
+img{
+    width: 8vw;
+}
+
+ul{
+    list-style-type: none; 
+}
+
+
+h1{
+    margin-left: 1.5vw;
+    margin-top: 1.5vh;
 }
 
 
 
-
-.video-container h1{
-    padding-left: 2%;
+.video-panel h1{
+    margin-left: 5vw;
 }
-
 
 
 .up-next{
-    float: right;
-    width: 30%;
-    background-color: aliceblue;
+    display: inline-block;
+    height: 100vh;
+    width: 25%;
+    background-color: skyblue;
+    position: absolute;
 }
 
+
+
+
+.video-item{
+    background-color: aquamarine;
+    display: flex;
+    width: 20vw;
+    margin-bottom: 4vh;
+}
+
+.video-item p{
+    font-weight: bold;
+    padding-left: 0.7vw;
+    margin-top: 0.4vh;
+    font-size: 1vw;
+}
+
+.video-item img{
+    border-radius: 7.5px;
+}
+
+button{
+    margin: 10px;
+    padding: 5px;
+    width: 100px;
+    height: 30px;
+}

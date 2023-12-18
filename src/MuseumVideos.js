@@ -1,51 +1,93 @@
 import Navbar from "./Navbar";
 import "./MuseumVideos.css";
 import TestVideo from './TestVideo.mp4';
+import VideoItem from './VideoItem';
+
 
 function MuseumVideos() {
+
+
+
+
+  var myVideo = document.getElementById("video1"); 
+  var playButton = document.getElementById("playButton");
+
+  function playPause() {
+    if (typeof myVideo !== "undefined" && myVideo !== null) {
+      if (myVideo.paused) {
+        myVideo.play();
+      } else {
+        myVideo.pause();
+      }
+    } else {
+      console.log("myVideo is undefined or null");
+    }
+  }
+
+
+  /*function playPause() { 
+    if (myVideo.paused) 
+      myVideo.play(); 
+    else 
+      myVideo.pause(); 
+  } */
+
+
+
   return (
     <div className="root">
       <Navbar />
 
-      <div>
-        <div className="video-main">
+      <div className="flex container">
 
-          <div className="video-container">
-            <video>
-              <source src={TestVideo} />
-              Your browser does not support the video tag.
-              <div className="video-elements">
-                <h1>This is a test</h1>
-              </div>
-            </video>
-            <h1>This is a test</h1>
-          </div>
+        <div className="video-panel">
+          <video id="video1" controls>
+            <source src={TestVideo}/>
+            Your browser does not support the video tag.
+            <div className="video-elements">
+              <h2>Your browser does not support videos. Get rekt, L, bozo, touch grass you absolute dingis</h2>
+            </div>
 
-          <div className="up-next">
-            <div className="up-next-title">Up Next</div>
-            <div className="video-list">
-              <div className="video-thumbnail">
-                <img src="logo.svg" alt="Video Thumbnail" />
-                <div className="video-info">
-                  <div className="video-title">Video Title</div>
-                  <div className="video-duration">3:10</div>
-                </div>
-              </div>
-              <div className="video-thumbnail">
-                <img src="logo.svg" alt="Video Thumbnail" />
-                <div className="video-info">
-                  <div className="video-title">Video Title</div>
-                  <div className="video-duration">4:25</div>
-                </div>
-              </div>
-              {/* Add more video thumbnails as needed */}
+          </video>
+          <h1>[TITLE PLACEHOLDER]</h1>
+          <button onClick={playPause} id="playButton">Play</button> 
+        </div>
+
+        <div className="up-next">
+          <h1>Up Next:</h1>
+          <div className="up-next-videos">
+            <div class="sidebar">
+              <ul class="thumbnail-list">
+                <li>
+                  <VideoItem />
+                </li>
+                <li>
+                  <VideoItem />
+                </li>
+                <li>
+                  <VideoItem />
+                </li>
+                <li>
+                  <VideoItem />
+                </li>
+                <li>
+                  <VideoItem />
+                </li>
+                <li>
+                  <VideoItem />
+                </li>
+              </ul>
             </div>
           </div>
         </div>
 
       </div>
+
+
+
     </div>
   );
+
 }
 
 export default MuseumVideos;

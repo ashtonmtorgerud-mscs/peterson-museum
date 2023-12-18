@@ -62,7 +62,8 @@ html{
   text-align: center;
   display: flex;
   float: left;
-  padding: 20px 40px 40px 20px;
+  padding: 20px 40px 0px 20px;
+  margin-bottom: -12px;
 }
 
 
@@ -181,6 +182,8 @@ a:hover{
     top: 10px;
 }
 
+
+
 .Header-search-form-submit{
   /* Chie Image:
   background-image: url(https://w0.peakpx.com/wallpaper/384/653/HD-wallpaper-chie-satonaka-house-home-video-game-game-close-up-anime-yukata-hot-anime-girl-female-persona-4-brown-hair-persona-four-kimono-sexy-brown-eyes-rpg-short-hair-cute-girl-fan.jpg);*/
@@ -201,4 +204,3 @@ a:hover{
   font-size: 16px;
   cursor: pointer;
 }
-
