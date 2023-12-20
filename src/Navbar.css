@@ -136,6 +136,7 @@ a:hover{
   animation-name: dropnavbarappear;
   animation-duration: 0.25s;
   animation-fill-mode: forwards;
+  z-index: 5;
 }
 
 
@@ -144,34 +145,6 @@ a:hover{
   0%   {  margin-top: 48px; opacity: 0;}
   100% {  margin-top: 32px; opacity: 100%;}
 }
-
-
-
-
-/* .Header-nav-folder{
-  display: none;
-  padding: 12px 16px;
-  text-decoration: none;
-  text-align: left;
-
-
-  color: black;
-  background-color: rgba(247, 243, 227, 0.8);
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  overflow: hidden;
-  position: absolute;
-}
-
-.Header-nav-item:hover .Header-nav-folder{
-  display: inline-block;
-  position: absolute;
-  vertical-align: bottom;
-  text-wrap: nowrap;
-  margin: 0px;
-} */
-
-
-
 
 /*Search Button*/
 
