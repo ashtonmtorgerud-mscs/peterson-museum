@@ -2,7 +2,7 @@ import Navbar from "./Navbar";
 import "./MuseumVideos.css";
 import TestVideo from './TestVideo.mp4';
 import VideoItem from './VideoItem';
-import { useState, useRef, useEffect  } from "react";
+import { useState, useRef, useEffect } from "react";
 
 
 function MuseumVideos() {
@@ -73,20 +73,21 @@ function MuseumVideos() {
       video.play();
     }
     setIsPlaying(!isPlaying);
-
+    setDuration(parseInt(videoRef.current.duration));
     if (buttonText === 'Play')
-    setButtonText('Paused');
-  else
-    setButtonText('Play');
+      setButtonText('Paused');
+
+    else
+      setButtonText('Play');
   };
 
 
-/// Handle Video Fullscreening 
+  /// Handle Video Fullscreening 
 
-const handleFullscreen = () => {
-  const video = videoRef.current;
-  video.requestFullscreen();
-}
+  const handleFullscreen = () => {
+    const video = videoRef.current;
+    video.requestFullscreen();
+  }
 
 
   /// Use Effect to update the volume slider and seeking slider
@@ -127,7 +128,7 @@ const handleFullscreen = () => {
   }
 
 
-  
+
   // Options for the dropdown
   const options = ['0.25', '0.5', '0.75', '1', '1.25', '1.5', '1.75', '2'];
 
@@ -138,41 +139,62 @@ const handleFullscreen = () => {
       <div className="flex container">
 
         <div className="video-panel">
-          <video id="video1" ref={videoRef} controls>
-            <source src={TestVideo} volume={volume / 100} muted={false} onTimeUpdate={ handleTimeUpdate } onLoadedMetadata={handleLoadedMetadata} />
-            Your browser does not support the video tag.
-            <div className="video-elements">
-              <h2>Your browser does not support videos. Get rekt, L, bozo, touch grass you absolute dingis</h2>
-            </div>
-
-          </video>
-
-          <button onClick={handlePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
-          <button onClick={handleVolumeMute}>{muteButtonText}</button>
-          <button onClick={handleFullscreen}>{'Fullscreen'}</button>
-          <input type="range" id="VolumeSlider" min="0" max="100" value={ volume } onChange={handleVolumeChange}/>
-          <input type="range" id="SeekerSlider" min="0" max={ duration+1 } value={ currentTime } onChange={handleSeekChange}/>
-          <h1>[TITLE PLACEHOLDER]</h1>
+          <div class="video-container">
+            <video id="video1" ref={videoRef}>
+              <source src={TestVideo} volume={volume / 100} muted={false} onTimeUpdate={handleTimeUpdate} onLoadedMetadata={handleLoadedMetadata} />
+              Your browser does not support the video tag.
+            </video>
 
 
-          <select
-            value={selectedOption}
-            onChange={(e) => {
-              setSelectedOption(e.target.value);
-              SetPlayBackSpeed(e.target.value);
-            }}
-          >
-            <option value="">1</option>
-            {options.map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
+            <input className="video-controls timeline" type="range" id="SeekerSlider" min="0" max={duration + 1} value={currentTime} onChange={handleSeekChange} />
+            <div className="button-container">
+            <button className="video-controls" onClick={handlePlayPause}>{'↺'}</button>
+              <button className="video-controls" onClick={handlePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
+              <button className="video-controls" onClick={handlePlayPause}>{'↻'}</button>
+              <button className="video-controls" onClick={handleVolumeMute}>{muteButtonText}</button>
+              <button className="video-controls" onClick={handleFullscreen}>{'Fullscreen'}</button>
+              <input className="video-controls" type="range" id="VolumeSlider" min="0" max="100" value={volume} onChange={handleVolumeChange} />
+
+              <select className="video-controls" value={selectedOption} onChange={(e) => {
+                setSelectedOption(e.target.value); SetPlayBackSpeed(e.target.value);
+              }}
+              >
+                <option value="">1</option>
+                {options.map((option) => (
+                  <option key={option} value={option}>
+                    {option}
+                  </option>
+                ))}
+              </select>
+
+            </div>  {/* className="button-container" */}
+
+
+
+          </div>
+
+
+          <div className="extra hide">
+            <button classname="">Button 1</button>
+            <button classname="">Button 2</button>
+            <div />
+
+          </div>
+
+
+
+
+          <h1 className="hide" >[TITLE PLACEHOLDER]</h1>
+
+
+
+
+
+
 
         </div>
 
-        <div className="up-next">
+        <div className="up-next hide">
           <h1>Up Next:</h1>
           <div className="up-next-videos">
             <div class="sidebar">
@@ -186,6 +208,7 @@ const handleFullscreen = () => {
         </div>
       </div>
     </div>
+
   );
 }
 
