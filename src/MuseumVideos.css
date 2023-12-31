@@ -1,4 +1,4 @@
-/* .root{
+.root{
     display: inherit;
 }
 
@@ -12,7 +12,7 @@
 .video-panel{
     display: inline-block;
     width: 75%;
-    /*background-color: lightcoral;*/   /*
+    /*background-color: lightcoral;*/   
     background: linear-gradient(to bottom, #f3f3f3, #ccc);
 
     height: 100vh;
@@ -75,74 +75,6 @@ h1{
 
 
 
-.video-container{
-    width: 66vw;
-    height: 37.15vw;
-    display: inline-block;
-    margin-top: 5vh;
-    position: relative;
-    margin-left: 5vw;
-    background-color: aquamarine;
-    opacity: 1;
-}
-
-video{
-    display: block;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-
-}
-
-.button-container {
-    display: block;
-    position: absolute;
-    top: 0px;
-    left: 100px;
-    width: 100%;
-    background-color: blue;
-  }
-  
-
-  button{
-    /*margin: 10px;*/   /*
-    padding: 5px;
-    width: 100px;
-    height: 30px;
-
-    z-index: 3;
-}
-
-
-  .floating-button {
-    position: inline;
-    display: flex;
-    bottom: 0%;
-    left: 0%;
-    height: 5%;
-    width: 10%;
-    margin: 0px;
-    z-index: 3;
-    font-size: 1vw;
-    padding-left: 2vw;
-    padding-top: 0.25vw;
-  }
-
-
-  .floating-button-two {
-    position: inline-flex;
-    display: flex;
-    bottom: 0%;
-    left: 10%;
-    height: 5%;
-    width: 10%;
-    margin: 0px;
-    z-index: 3;
-  }
-
-   */
-
-
 
 
    /*//////////////       Current Testing Field, trying to overlay the buttons above the video player       //////////////*/
@@ -171,28 +103,77 @@ video{
 .button-container{
     display: block;
     position: absolute;
+    width: 100%;
     bottom: 0px;
+    background-color: red;
+
 }
 
 
+
+
+/*           Fading effect           */
+
+
+.video-container .video-controls, .video-container .video-controls-right, .video-container .timeline, .video-container .duration-text{
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.video-container:hover .video-controls, .video-container:hover .video-controls-right, .video-container:hover .timeline, .video-container:hover .duration-text{
+    opacity: 1;
+}
 
 .video-controls{
     display: inline-block;
     position: relative;
     bottom: 0px;
-    width: 4vw;
-    height: auto;
+    width: 3vw;
+    height: 38.4px; /* height: 2vw; */
     z-index: 3;
+    margin-right: 1px;
 }
+
+
+.video-controls div p{
+    font-size: 200px;
+    color: #4c4c4c;
+}
+
 
 
 .timeline{
     display: block;
     position: absolute;
-    bottom: 24px;
+    bottom: 30.72px; /* bottom: 1.6vw; */
     width: 100%;
     margin: 0px;
-    z-index: 3;
+    z-index: 4;
+    padding-bottom: 0px;
+
+}
+
+
+
+.video-controls-right{
+    margin-left: 1px;
+}
+
+
+
+button{
+    background-color: rgba(0, 0, 0, 0.5); /* Cyan color with opacity */
+    background: linear-gradient(to bottom, #4c4c4c, rgba(0, 0, 0, 0.5));
+    font-family: "Arial", "Helvetica", "Arial", sans-serif;
+    vertical-align: middle; /* or 'top', 'bottom', 'baseline', etc. */
+    color: white;  /* Text color */
+    border: white 0px solid;  /* Remove border */
+    padding: 10px 20px;  /* Set padding */
+    font-size: 1vw;  /* Set font size */
+    margin: 0px;
+    text-align: center;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 
@@ -200,14 +181,53 @@ video{
 
 
 
+.button-container input{ 
+    background-color: rgba(0, 0, 0, 0.5); /* Cyan color with opacity */
+    background: linear-gradient(to bottom, #4c4c4c, rgba(0, 0, 0, 0.5));
+    bottom: -0.9vw;
+    width: 5vw;
+    margin-left: 4px;
+    z-index: 4;
+}
+
+
+.duration-text{
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5); /* Cyan color with opacity */
+    background: linear-gradient(to bottom, #4c4c4c, rgba(0, 0, 0, 0.5));
+    font-family: "Arial", "Helvetica", "Arial", sans-serif;
+    color: white;
+    right: 6vw;
+    margin: 0px;
+    z-index: 3;
+    bottom: 0px;
+    padding: 0.7vw 1vw 0.4vw 3.35vw;    /* padding: 0.7vw 1vw 0.4vw 43.35vw; */
+}
+
+.button-container select{
+    background-color: rgba(0, 0, 0, 0.5); /* Cyan color with opacity */
+    background: linear-gradient(to bottom, #4c4c4c, rgba(0, 0, 0, 0.5));
+    color: white;
+    display: inline;
+    position: absolute;
+    right: 3vw;
+}
+
+.video-controls-right{
+    display: inline-block;
+    position: absolute;
+    bottom: 0px;
+    width: 3vw;
+    height: 38.4px; /* height: 2vw; */
+    z-index: 3;
+    right: 0;
+}
 
 
 
-
-  
-
-  .hide{
-    display: none;
-  }
-
+select option{
+    background-color: rgba(0, 0, 0, 0.5); /* Cyan color with opacity */
+    color: white;
+}
 

@@ -1,8 +1,8 @@
-import Navbar from "./Navbar";
 import "./MuseumVideos.css";
 import TestVideo from './TestVideo.mp4';
 import VideoItem from './VideoItem';
 import { useState, useRef, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 
 function MuseumVideos() {
@@ -13,10 +13,19 @@ function MuseumVideos() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [volume, setVolume] = useState(50);
   const [buttonText, setButtonText] = useState('Play');
-  const [muteButtonText, setMuteButtonText] = useState('Mute');
+  const [muteButtonText, setMuteButtonText] = useState('🔊');
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(100);
   const [muted, setMuted] = useState(false);
+
+
+
+  ///Retrieving Parameters from the Route
+
+  const { id } = useParams();
+
+
+
 
 
   /// Volume Changing Code
@@ -33,10 +42,10 @@ function MuseumVideos() {
     const video = videoRef.current;
     if (video.muted) {
       video.muted = false;
-      setMuteButtonText('Mute');
+      setMuteButtonText('🔊');
     } else {
       video.muted = true;
-      setMuteButtonText('Muted');
+      setMuteButtonText('🔇');
     }
 
   }
@@ -44,6 +53,7 @@ function MuseumVideos() {
 
 
   /// Change the video seaking
+
 
   const handleTimeUpdate = () => {
     setCurrentTime(videoRef.current.currentTime);
@@ -59,6 +69,21 @@ function MuseumVideos() {
     videoRef.current.currentTime = seekTime;
     setCurrentTime(seekTime);
   };
+
+
+  /// Rewind 10 seconds
+
+  const Rewind = () => {
+    videoRef.current.currentTime = videoRef.current.currentTime - 10;
+    setCurrentTime(videoRef.current.currentTime);
+  };
+
+
+  const FastForward = () => {
+    videoRef.current.currentTime = videoRef.current.currentTime + 10;
+    setCurrentTime(videoRef.current.currentTime);
+  };
+
 
 
 
@@ -133,8 +158,24 @@ function MuseumVideos() {
   const options = ['0.25', '0.5', '0.75', '1', '1.25', '1.5', '1.75', '2'];
 
 
+
+
+
+  function formatVideoTime(duration) {
+    const minutes = Math.floor(duration / 60);
+    const seconds = Math.floor(duration % 60);
+    return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+  }
+
+
+
+
+
   return (
     <div className="root">
+
+
+
 
       <div className="flex container">
 
@@ -146,15 +187,14 @@ function MuseumVideos() {
             </video>
 
 
-            <input className="video-controls timeline" type="range" id="SeekerSlider" min="0" max={duration + 1} value={currentTime} onChange={handleSeekChange} />
+            <input className="timeline" type="range" id="SeekerSlider" min="0" max={duration + 1} value={currentTime} onChange={handleSeekChange} />
             <div className="button-container">
-            <button className="video-controls" onClick={handlePlayPause}>{'↺'}</button>
-              <button className="video-controls" onClick={handlePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
-              <button className="video-controls" onClick={handlePlayPause}>{'↻'}</button>
+              <button className="video-controls" onClick={Rewind}>{'↺'}</button>
+              <button className="video-controls" onClick={handlePlayPause}>{isPlaying ? '⏸' : '▶'}</button>
+              <button className="video-controls" onClick={FastForward}>{'↻'}</button>
               <button className="video-controls" onClick={handleVolumeMute}>{muteButtonText}</button>
-              <button className="video-controls" onClick={handleFullscreen}>{'Fullscreen'}</button>
               <input className="video-controls" type="range" id="VolumeSlider" min="0" max="100" value={volume} onChange={handleVolumeChange} />
-
+              <div className="video-controls"></div>
               <select className="video-controls" value={selectedOption} onChange={(e) => {
                 setSelectedOption(e.target.value); SetPlayBackSpeed(e.target.value);
               }}
@@ -166,32 +206,18 @@ function MuseumVideos() {
                   </option>
                 ))}
               </select>
-
+              <p className="duration-text">{formatVideoTime(currentTime) + '/' + formatVideoTime(duration)}</p>
+              <button className="video-controls-right" onClick={handleFullscreen}> <div>&#128470;</div></button>
             </div>  {/* className="button-container" */}
 
 
 
           </div>
 
-
-          <div className="extra hide">
-            <button classname="">Button 1</button>
-            <button classname="">Button 2</button>
-            <div />
-
-          </div>
+        <div/>
 
 
-
-
-          <h1 className="hide" >[TITLE PLACEHOLDER]</h1>
-
-
-
-
-
-
-
+          <h1 className="hide" >{'Video #' + id}</h1>
         </div>
 
         <div className="up-next hide">

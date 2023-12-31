@@ -99,7 +99,7 @@ function Navbar() {
 
                 <span class="Header-nav-item Header-nav-item--folder">
 
-                  <a href="https://www.petersonmn.com/explore-peterson-minnesota" class="Header-nav-folder-title" data-controller="HeaderNavFolderTouch" data-controllers-bound="HeaderNavFolderTouch">Museum</a>
+                  <a href="/" class="Header-nav-folder-title" data-controller="HeaderNavFolderTouch" data-controllers-bound="HeaderNavFolderTouch">Museum</a>
 
                   <span class="Header-nav-folder">
 

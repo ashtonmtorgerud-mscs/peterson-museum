@@ -10,8 +10,9 @@ function App() {
     <Router>
       { <Navbar /> }
       <Routes>
-      <Route path='/'  />
-      <Route path="/MuseumVideos" element={<MuseumVideos/>} />
+      <Route exact path='/'  />
+      <Route path="/MuseumVideos/:id" element={<MuseumVideos/>} />
+
         {/* Add more routes for other subpages */}
       </Routes>
     </Router>
