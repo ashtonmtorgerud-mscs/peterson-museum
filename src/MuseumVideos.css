@@ -1,72 +1,68 @@
-.root{
+.root {
     display: inherit;
+    width: 100%;
 }
 
-.flex-container{
+
+.barrier {
+    display: block;
+    height: 3vh;
+    background-color: darkturquoise;
+}
+
+
+.flex-container {
     margin-top: -100px;
     margin: 0px;
     display: flex;
 }
 
+@media (min-width: 768px) {
+    .video-panel {
+        display: inline-block;
+        width: 73%;
+        /*background-color: lightcoral;*/
+        /* background: linear-gradient(to bottom, #f3f3f3, #ccc); */
+        background-color: white;
+        height: 100vh;
 
-.video-panel{
-    display: inline-block;
-    width: 75%;
-    /*background-color: lightcoral;*/   
-    background: linear-gradient(to bottom, #f3f3f3, #ccc);
-
-    height: 100vh;
-    
+    }
 }
 
-img{
-    width: 8vw;
+@media (max-width: 767px) {
+    .video-panel {
+        display: block;
+        width: 100%;
+        /*background-color: lightcoral;*/
+        /* background: linear-gradient(to bottom, #f3f3f3, #ccc); */
+        background-color: white;
+        height: 100vh;
+
+    }
 }
 
-ul{
-    list-style-type: none; 
+@media (min-width: 768px) {
+    .up-next {
+        display: inline-block;
+        height: 100vh;
+        width: 27%;
+        background-color: white;
+        position: absolute;
+        padding: 0px;
+
+    }
 }
 
+@media (max-width: 767px) {
+    .up-next {
+        display: inline-block;
+        height: 100vh;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        padding: 0px;
 
-h1{
-    margin-left: 1.5vw;
-    margin-top: 1.5vh;
-}
-
-
-
-.video-panel h1{
-    margin-left: 5vw;
-}
-
-
-.up-next{
-    display: inline-block;
-    height: 100vh;
-    width: 25%;
-    background-color: skyblue;
-    position: absolute;
-}
-
-
-
-
-.video-item{
-    background-color: aquamarine;
-    display: flex;
-    width: 20vw;
-    margin-bottom: 4vh;
-}
-
-.video-item p{
-    font-weight: bold;
-    padding-left: 0.7vw;
-    margin-top: 0.4vh;
-    font-size: 1vw;
-}
-
-.video-item img{
-    border-radius: 7.5px;
+    }
 }
 
 
@@ -76,158 +72,280 @@ h1{
 
 
 
-
-   /*//////////////       Current Testing Field, trying to overlay the buttons above the video player       //////////////*/
-
-   
-.video-container{
-    width: 66vw;
-    height: 37.15vw;
-    display: inline-block;
-    margin-top: 5vh;
-    position: relative;
-    margin-left: 5vw;
-    background-color: aquamarine;
-    opacity: 1;
-}
-
-video{
-    display: block;
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-    opacity: 1;
-}
-
-
-.button-container{
-    display: block;
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    background-color: red;
-
+.up-next ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
 }
 
 
 
 
-/*           Fading effect           */
-
-
-.video-container .video-controls, .video-container .video-controls-right, .video-container .timeline, .video-container .duration-text{
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-
-.video-container:hover .video-controls, .video-container:hover .video-controls-right, .video-container:hover .timeline, .video-container:hover .duration-text{
-    opacity: 1;
-}
-
-.video-controls{
-    display: inline-block;
-    position: relative;
-    bottom: 0px;
-    width: 3vw;
-    height: 38.4px; /* height: 2vw; */
-    z-index: 3;
-    margin-right: 1px;
-}
-
-
-.video-controls div p{
-    font-size: 200px;
+.up-next-text {
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    line-height: 16.5px;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    font-weight: normal;
     color: #4c4c4c;
 }
 
 
 
-.timeline{
+
+
+/*//////////////       Desktop Display Settings       //////////////*/
+
+@media (min-width: 768px) {
+    .video-container {
+        width: 66vw;
+        height: 37.125vw;
+        display: inline-block;
+        margin-top: 2.5vh;
+        position: relative;
+        margin-left: 5vw;
+        background-color: white;
+        opacity: 1;
+    }
+
+
+
+    .video-controls {
+        display: inline-block;
+        position: relative;
+        bottom: 0px;
+        width: 4vw;
+        /* min-width: 32px; */
+        min-height: 38.4px;
+        height: 3vw;
+        z-index: 3;
+        margin-right: 0.1vw;
+    }
+
+
+
+    .button-container {
+        display: block;
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        /* background-color: white; */
+        white-space: nowrap;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .timeline {
+        bottom: 2.7vw;
+    }
+
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+    .video-container {
+        width: 80vw;
+        height: 45vw;
+        display: inline-block;
+        margin-top: 1vh;
+        position: relative;
+        margin-left: 2.5vw;
+        /* background-color: white; */
+        /* background-color: rgb(255, 127, 212); */
+        opacity: 1;
+        min-width: 550px;
+    }
+
+
+    .button-container {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0%;
+        bottom: 20px;
+        /* background-color: white; */
+        white-space: nowrap;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    }
+
+
+    .video-controls {
+        display: inline-block;
+        position: relative;
+        bottom: 0px;
+        width: 5vw;
+        min-width: 50px;
+        /* min-width: 32px; */
+        min-height: 38.4px;
+        height: 3vw;
+        z-index: 3;
+        margin-right: 0.1vw;
+    }
+
+
+
+    .timeline {
+        bottom: 2vw;
+    }
+
+
+}
+
+video {
     display: block;
     position: absolute;
-    bottom: 30.72px; /* bottom: 1.6vw; */
+    width: 100%;
+    z-index: 1;
+    opacity: 1;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+}
+
+.button-container {
+    display: block;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    /* background-color: white; */
+    white-space: nowrap;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+}
+
+.video-container .video-controls,
+.video-container .video-controls-alt,
+.video-container .video-controls-special,
+.video-container .timeline,
+.video-container .duration-text {
+    opacity: 0.0;
+    transition: opacity 0.3s ease;
+}
+
+.video-container:hover .video-controls,
+.video-container:hover .video-controls-alt,
+.video-container:hover .video-controls-special,
+.video-container:hover .timeline,
+.video-container:hover .duration-text {
+    opacity: 1;
+}
+
+.timeline {
+    display: block;
+    position: absolute;
     width: 100%;
     margin: 0px;
     z-index: 4;
     padding-bottom: 0px;
-
 }
 
 
 
-.video-controls-right{
-    margin-left: 1px;
-}
-
-
-
-button{
-    background-color: rgba(0, 0, 0, 0.5); /* Cyan color with opacity */
+button {
+    background-color: rgba(0, 0, 0, 0.5);
     background: linear-gradient(to bottom, #4c4c4c, rgba(0, 0, 0, 0.5));
     font-family: "Arial", "Helvetica", "Arial", sans-serif;
-    vertical-align: middle; /* or 'top', 'bottom', 'baseline', etc. */
-    color: white;  /* Text color */
-    border: white 0px solid;  /* Remove border */
-    padding: 10px 20px;  /* Set padding */
-    font-size: 1vw;  /* Set font size */
+    vertical-align: middle;
+    color: white;
+    border: white 0px solid;
+    padding: 10px 20px;
+    font-size: 1vw;
+    font-size: calc(8px + 0.8vw);
     margin: 0px;
     text-align: center;
     padding: 0px;
     box-sizing: border-box;
 }
 
-
-
-
-
-
-.button-container input{ 
-    background-color: rgba(0, 0, 0, 0.5); /* Cyan color with opacity */
+.video-controls-alt {
+    display: inline;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
     background: linear-gradient(to bottom, #4c4c4c, rgba(0, 0, 0, 0.5));
-    bottom: -0.9vw;
-    width: 5vw;
-    margin-left: 4px;
-    z-index: 4;
+    width: 6vw;
+    /* min-width: 80px; */
+    z-index: 3;
+    min-height: 38.4px;
+    height: 3vw;
+    margin: 0px;
+    margin-right: 0.1vw;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.duration-text{
-    display: inline-block;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.5); /* Cyan color with opacity */
+.button-container input {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.5);
     background: linear-gradient(to bottom, #4c4c4c, rgba(0, 0, 0, 0.5));
+    width: 5vw;
+    height: 12px;
+    margin: 0px;
+    padding: 0px;
+    z-index: 5;
+}
+
+.duration-text {
     font-family: "Arial", "Helvetica", "Arial", sans-serif;
     color: white;
-    right: 6vw;
+    right: 0vw;
     margin: 0px;
     z-index: 3;
     bottom: 0px;
-    padding: 0.7vw 1vw 0.4vw 3.35vw;    /* padding: 0.7vw 1vw 0.4vw 43.35vw; */
+    margin: 3px 0px -0px 0px;
 }
 
-.button-container select{
-    background-color: rgba(0, 0, 0, 0.5); /* Cyan color with opacity */
+.button-container select {
+    background-color: rgba(0, 0, 0, 0.5);
     background: linear-gradient(to bottom, #4c4c4c, rgba(0, 0, 0, 0.5));
     color: white;
     display: inline;
-    position: absolute;
-    right: 3vw;
+    size: 100px;
+    font-size: 1.25vw;
+    vertical-align: middle;
 }
 
-.video-controls-right{
-    display: inline-block;
-    position: absolute;
-    bottom: 0px;
-    width: 3vw;
-    height: 38.4px; /* height: 2vw; */
-    z-index: 3;
-    right: 0;
-}
-
-
-
-select option{
-    background-color: rgba(0, 0, 0, 0.5); /* Cyan color with opacity */
+select option {
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+
 }
 
+.video-controls-special {
+    display: inline-block;
+    position: relative;
+    bottom: 0px;
+    width: 29.2vw;
+    min-width: 32px;
+    min-height: 38.4px;
+    height: 3vw;
+    z-index: 3;
+    margin-right: 0.1vw;
+}
+
+
+
+.video-title {
+    display: block;
+    font-size: 1.5vw;
+    letter-spacing: 1px;
+    line-height: 16.5px;
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    margin-left: 5vw;
+}
+
+
+
+
+.description-box {
+    background-color: #e4e4e4;
+    margin-left: 5vw;
+    padding: 0.25vw 1vw;
+    border-radius: 12px;
+    width: 64.25vw;
+    outline: 1px gray solid;
+}

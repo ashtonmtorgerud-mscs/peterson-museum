@@ -108,7 +108,7 @@ function Navbar() {
 
 
 
-                    <a href="https://www.petersonmn.com/attractions" class="Header-nav-folder-item" data-test="template-nav">Schedule</a>
+                    <a href="/Schedule" class="Header-nav-folder-item" data-test="template-nav">Schedule</a>
 
 
 

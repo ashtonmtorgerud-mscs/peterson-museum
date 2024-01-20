@@ -1,14 +1,25 @@
 import PatPic from './PatrickEyes.png';
-import "./MuseumVideos.css";
+import "./Thumbnail.css";
 
-function VideoItem() {
+const VideoItem = (props) => {
 
-    return (
-      <div className="video-item">
-            <img src={PatPic} />
-            <p>Video title</p>
+  const title = props.title;
+  const description = props.description;
+
+
+  return (
+    <div className="video-item">
+      <div className="image-half">
+        <img src={PatPic} />
       </div>
-    );
-  }
-  
-  export default VideoItem;
+      <div className="title-corner">
+      <h3>{title}</h3>
+      </div>
+      <div className="description-corner">
+        <p>{description}</p>
+      </div>
+    </div>
+  );
+}
+
+export default VideoItem;

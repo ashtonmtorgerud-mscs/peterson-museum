@@ -7,6 +7,8 @@ import { useParams } from "react-router-dom";
 
 function MuseumVideos() {
 
+
+
   /// Use States & Variable definitions
 
   const videoRef = useRef(null);
@@ -17,6 +19,13 @@ function MuseumVideos() {
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(100);
   const [muted, setMuted] = useState(false);
+
+
+
+  /// Video Array for names, titles, and descriptions: 
+  const thumbnails = ["How to fart on monkeys", "beating my neighbor's dog to death with a 2x4 challenge (gone wrong)", ""];
+  const titles = ["How to fart on monkeys", "beating my neighbor's dog to death with a 2x4 challenge (gone wrong)", "10 donkeys of all time"];
+  const description = ["hajeme ni, install BLENDER", "what's going on guys today we're gonna be... ", "1, shrek"];
 
 
 
@@ -172,15 +181,16 @@ function MuseumVideos() {
 
 
   return (
+
     <div className="root">
 
-
+      <div className="barrier"> </div>
 
 
       <div className="flex container">
 
         <div className="video-panel">
-          <div class="video-container">
+          <div className="video-container">
             <video id="video1" ref={videoRef}>
               <source src={TestVideo} volume={volume / 100} muted={false} onTimeUpdate={handleTimeUpdate} onLoadedMetadata={handleLoadedMetadata} />
               Your browser does not support the video tag.
@@ -193,47 +203,64 @@ function MuseumVideos() {
               <button className="video-controls" onClick={handlePlayPause}>{isPlaying ? '⏸' : '▶'}</button>
               <button className="video-controls" onClick={FastForward}>{'↻'}</button>
               <button className="video-controls" onClick={handleVolumeMute}>{muteButtonText}</button>
-              <input className="video-controls" type="range" id="VolumeSlider" min="0" max="100" value={volume} onChange={handleVolumeChange} />
-              <div className="video-controls"></div>
+
+              <button className="video-controls-alt">{''}
+                <input className="" type="range" id="VolumeSlider" min="0" max="100" value={volume} onChange={handleVolumeChange} />
+              </button>
+
+
+              <button className="video-controls-special" onClick={handlePlayPause}>{''}</button>
+
+
+
+              <button className="video-controls-alt" onClick={handlePlayPause}>{''}
+                <p className="duration-text">{formatVideoTime(currentTime) + '/' + formatVideoTime(duration)}</p>
+              </button>
+
+
+
+
               <select className="video-controls" value={selectedOption} onChange={(e) => {
                 setSelectedOption(e.target.value); SetPlayBackSpeed(e.target.value);
               }}
               >
-                <option value="">1</option>
+                <option value="1">1</option>
                 {options.map((option) => (
                   <option key={option} value={option}>
                     {option}
                   </option>
                 ))}
               </select>
-              <p className="duration-text">{formatVideoTime(currentTime) + '/' + formatVideoTime(duration)}</p>
-              <button className="video-controls-right" onClick={handleFullscreen}> <div>&#128470;</div></button>
+
+
+              <button className="video-controls" onClick={handleFullscreen}> <div>&#128470;</div></button>
+
             </div>  {/* className="button-container" */}
 
-
-
           </div>
+          <div><h1 className="video-title" >{titles[id] ? titles[id] : "Error 404: Title not found"}</h1></div>
 
-        <div/>
-
-
-          <h1 className="hide" >{'Video #' + id}</h1>
+          <div className="description-box"><h3 className="video-description" >{description[id] ? description[id] : "The video you were looking for could not be found. Try returning to the home screen and trying a different video"}</h3></div>
         </div>
 
-        <div className="up-next hide">
-          <h1>Up Next:</h1>
+
+
+        <div className="up-next">
+          <h1 className="up-next-text">Up Next:</h1>
           <div className="up-next-videos">
-            <div class="sidebar">
-              <ul class="thumbnail-list">
-                <li>
-                  <VideoItem />
-                </li>
-              </ul>
-            </div>
+                  <ul class="thumbnail-list">
+                    <li>
+                      <VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC'/>
+                    </li>
+
+                  </ul>
           </div>
         </div>
       </div>
     </div>
+
+
+
 
   );
 }
