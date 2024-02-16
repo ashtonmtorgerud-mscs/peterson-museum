@@ -5,7 +5,7 @@ const VideoItem = (props) => {
 
   const title = props.title;
   const description = props.description;
-
+  const link = props.link;
 
   return (
     <div className="video-item">

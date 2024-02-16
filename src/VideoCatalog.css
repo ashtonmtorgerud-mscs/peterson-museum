@@ -1,0 +1,9 @@
+.barrier {
+    display: block;
+    height: 3vh;
+    background-color: darkturquoise;
+}
+
+ul{
+    list-style: none;
+}

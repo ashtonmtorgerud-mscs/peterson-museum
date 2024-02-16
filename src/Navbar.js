@@ -1,6 +1,11 @@
 import './Navbar.css';
 
 function Navbar() {
+
+  const redirect = (link) => {
+    window.location.href = link;
+  };
+
   return (
     <div className="Museum">
 
@@ -12,8 +17,12 @@ function Navbar() {
 
             <nav class="Header-nav Header-nav--primary" data-nc-element="primary-nav" data-content-field="navigation">
 
-            <img src="//images.squarespace-cdn.com/content/v1/5c47e5fd365f02e0856ce7ce/1549117318571-6JRHJC8OQ33037W3BNOI/cityofpeterson-logo.png?format=1500w" alt="City of Peterson, Minnesota" class="Header-branding-logo" />
-
+            <img
+                src="//images.squarespace-cdn.com/content/v1/5c47e5fd365f02e0856ce7ce/1549117318571-6JRHJC8OQ33037W3BNOI/cityofpeterson-logo.png?format=1500w"
+                alt="City of Peterson, Minnesota"
+                className="Header-branding-logo"
+                onClick={ () => redirect("https://www.petersonmn.com/")} // Add onClick event handler
+              />
 
 
               <div class="Header-nav-inner">
@@ -104,7 +113,7 @@ function Navbar() {
                   <span class="Header-nav-folder">
 
 
-                    <a href="/MuseumVideos" class="Header-nav-folder-item" data-test="template-nav">Videos</a>
+                    <a href="/VideoCatalog" class="Header-nav-folder-item" data-test="template-nav">Videos</a>
 
 
 
@@ -142,9 +151,9 @@ function Navbar() {
 
 
 
-            <div class="Header-search" data-nc-element="search">
-              <form class="Header-search-form" action="/search" method="get">
-                <button class="Header-search-form-submit" type="submit"></button>
+            <div class="Header-search" onClick={() => redirect("https://www.petersonmn.com/search?q=")}>
+              <form class="Header-search-form" >
+                <button class="Header-search-form-submit" type="submit" ></button>
               </form>
             </div><nav class="Header-nav Header-nav--secondary" data-nc-element="secondary-nav" data-content-field="navigation">
 

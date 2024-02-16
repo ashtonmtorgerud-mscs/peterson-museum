@@ -29,21 +29,27 @@
   th{
     text-align: center;
     padding: 15px;
-
+    border: 1px solid #ccc;
+    background: #ccc;
+    border-radius: 15px;
   }
 
   td {
     text-align: left;
     padding: 0px 0px 0px 15px;
+    margin: 0%;
     max-width: 3vw;
-    min-height:200px
-    
-  }
-  
-  thead th {
+    min-height: 200px;
+    z-index: 9;
+    position: inherit;
     background-color: #ddd;
     border-radius: 15px;
   }
+  
+  /* thead th {
+    background-color: #ddd;
+    border-radius: 150px;
+  } */
   
   td:first-child{
     color: #056985;
@@ -53,12 +59,12 @@
   
   td:last-child{
     color: #056985;
-    background-color: #cccccc;
+    background-color: #ccc;
     border-radius: 15px;
   }
 
   td:not(:empty):hover {
-    background-color: #ddd;
+    background-color: #bbb;
     border-radius: 15px;
   }
   
@@ -66,17 +72,55 @@
   .dateBox {
     margin: 0;
     padding: 0;
-    padding-bottom: 1vh;
+    padding-bottom: 0.5vh;
+    display: flex;
+    align-items: center; /* Add this line to vertically center the content */
+    /* background-color: rgba(180, 180, 180, 0.5); */
+  }
+  
+  .dateBox h3 {
+    margin: 4% 0 4% 0; /* Add this line to remove the default margin */
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2vw;
+    height: 2vw;
+  }
+  
+
+  .eventBox p {
+    margin: 0; /* Add this line to remove the default margin */
+    padding: 0px;
     display: block;
-    min-height: 30px;
-}
+  }
+
+
+  .dateBox p {
+    margin: 0; /* Add this line to remove the default margin */
+    padding: 0px;
+    margin-bottom: 10%;
+    display: block;
+  }
+
+
+
+/* .dateBox {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 0.5vh;
+  display: flex; /* Change display to flex */
+/*  flex-direction: column; /* Add flex-direction property */
+/*  justify-content: space-between; /* Add justify-content property */
+/*  min-height: 30px;
+  background-color: rgba(180, 180, 180, 0.5);
+  width: 100%; /* Add width property */
+/*} */
 
 
 .today{
-  color: crimson;
-  background-color: #056985;
+  color: white;
+  background-color: rgb(50, 50, 50);
   border-radius: 500px;
-  width: 1.5vw;
-  height: 1.5vw;
 }
 
