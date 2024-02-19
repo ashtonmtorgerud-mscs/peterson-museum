@@ -9,7 +9,7 @@
 
 .calendar {
     font-family: Arial, sans-serif;
-    margin: 10vh 10vw 0 10vw;
+    margin: 5vh 10vw 0 10vw;
     background: #f1f1f1;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -44,8 +44,53 @@
     position: inherit;
     background-color: #ddd;
     border-radius: 15px;
+
+
+    font-size: 12px;
+    letter-spacing: 0.75px;
+    line-height: 16.5px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
   }
   
+
+  .introParagraph{
+    margin: 3% 10% 0 10%;
+  }
+
+  .gap {
+    height: 1px;
+    background-color: grey;
+    width: 100%;
+    margin: 10px auto; /* Adjust the margin values as needed */
+  }
+  
+
+  .introParagraph h2{
+    font-size: 30px;
+    letter-spacing: 0.75px;
+    line-height: 16.5px;
+    text-decoration: none;
+    font-weight: normal;
+    color: rgb(51, 51, 51);
+  }
+  
+  .introParagraph p{
+    font-size: 20px;
+    letter-spacing: 0.75px;
+    line-height: 25px;
+    text-decoration: none;
+    font-weight: lighter;
+    color: rgb(51, 51, 51);
+  }
+
+.event{
+  font-weight: bold;;
+}
+
+
   /* thead th {
     background-color: #ddd;
     border-radius: 150px;

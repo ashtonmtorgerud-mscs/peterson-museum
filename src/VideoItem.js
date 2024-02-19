@@ -13,7 +13,7 @@ const VideoItem = (props) => {
         <img src={PatPic} />
       </div>
       <div className="title-corner">
-      <h3>{title}</h3>
+      <h3>{title + ""}</h3>
       </div>
       <div className="description-corner">
         <p>{description}</p>

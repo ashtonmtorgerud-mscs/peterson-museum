@@ -57,21 +57,30 @@ const Schedule = (props) => {
 
 
 
-
+    let holiday = false;
+    let specialHours = "Specialhours";
 
     ///Check if a date is a holiday and return the title of the holiday
     function getHolidayName(date) {
         // Create an object with holiday dates as keys and holiday names as values
         var holidays = {
           '01-01': "New Year\'s Day",
-          '02-01': "New Year\'s Day Feb",
-          '03-01': "First Day of March",
-          '04-01': "April Fools Day",
-          '01-02': "First Day of March",
-          '02-02': "Second Day of March",
-          '02-14': "Independence Day",
-          '04-02': "Christmas Day"
+          '02-01': "First of Febuary",
+          '02-14': "Valentine's Day",
+          '03-31': "Easter Day",
+          '07-04': "Independence Dayy",
+          '12-25': "Christmas Day"
         };
+
+        var holidaysTimes = {
+            '01-01': "Closed for New Year\'s Day",
+            '02-01': "Open by appointment",
+            '02-14': "Closed for Valentine's day",
+            '03-31': "Closed for Easter",
+            '07-04': "Closed for Independence Day",
+            '12-25': "Closed for Christmas Day"
+          };
+
       
         // Get the month and day of the given date
         var month = (date.getMonth() + 1).toString().padStart(2, '0');
@@ -82,7 +91,9 @@ const Schedule = (props) => {
 
         // Check if the formatted date exists in the holidays object
         if (holidays.hasOwnProperty(formattedDate)) {
-          return holidays[formattedDate];
+            holiday = true
+            specialHours = holidaysTimes[formattedDate];
+          return  "• " + holidays[formattedDate];
         } else {
         //   return "Not a holiday";
           return "";
@@ -90,6 +101,11 @@ const Schedule = (props) => {
       }
 
     function getHours(dayofWeek) {
+
+        if (holiday){
+            holiday = false;
+            return specialHours;
+        } 
 
         switch (dayofWeek) {
             case "Sunday": return "Closed";
@@ -121,7 +137,6 @@ const Schedule = (props) => {
         if (checkhours != true){
             return holiname;
         }
-        console.log(passDate + " Returns the day as " + passDate.getDay() + " and the month as " + passDate.getMonth());
         return days[passDate.getDay()];
       }
       
@@ -130,9 +145,26 @@ const Schedule = (props) => {
 
     return (
         <div className="root">
+
+            <div className="barrier"></div>
+
+
+            <div className="introParagraph">
+                <h2>This is a test</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac pharetra tellus. Nullam interdum lacus at cursus malesuada. Pellentesque consequat augue eu urna facilisis commodo. Mauris consectetur, mauris vel semper iaculis, libero elit efficitur lorem, ac tincidunt justo lectus in mauris.</p>
+
+                <div className="gap"></div>
+            </div>
+
+
+
+
+
+
+
             <div className="calendar">
                 <div className="month">
-                    <h2>{months[month]}</h2>
+                <h2 style={{fontWeight: 'bold'}}>{months[month]}</h2>
                 </div>
                 <table>
                     <thead>
@@ -152,7 +184,7 @@ const Schedule = (props) => {
                                 {rowData.map((cellData, cellIndex) => (
                                     <td key={cellIndex} id={cellData}><div className="dateBox"><h3 className={cellData === date.getDate() ? "today" : ""}>{cellData}</h3></div>
                                         <div className="eventBox">
-                                            <p style={{ visibility: cellData === 1 ? 'visible' : 'visible' }}>{CheckHoliday(cellData, year, month + currentMonth, cellData)}</p>
+                                        <p className="event">{CheckHoliday(cellData, year, month + currentMonth, cellData)}</p>
                                         </div><div className="dateBox">
                                             <p>{getHours(CheckHoliday(cellData, year, month + currentMonth, cellData, true))}</p>
                                         </div>

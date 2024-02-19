@@ -192,7 +192,7 @@ function MuseumVideos() {
         <div className="video-panel">
           <div className="video-container">
             <video id="video1" ref={videoRef}>
-              <source src={TestVideo} volume={volume / 100} muted={false} onTimeUpdate={handleTimeUpdate} onLoadedMetadata={handleLoadedMetadata} />
+              <source src={"https://cvws.icloud-content.com/S/AbGhDP2ojZXr02jwp3Hnf22lX7_M/IMG_1452.mp4?o=AuQaonigzj9gxNR_fAvJWdDv--u-NSydDT7tiQANKPjc&v=1&z=https%3A%2F%2Fp62-content.icloud.com%3A443&x=1&a=CAogV72pA0tVP4VfSiTqNPQtsyFHElynYP-oEOZZasrOX3USZxCJ6KXz2zEYif-4-NsxIgEAUgSlX7_MaiY3xiunSq-t3bj43lzqsbZGbma8Ql28IASvRX1u_HyEOidfnRA1cnImAvrdrkVgsHJ5j3tdhwnczV_3zBn0W0BEnyti3p2L8ThHzdCXouo&e=1708307398&r=d8bd83ba-8ca4-44da-8384-6e8507d74091-2&s=fZI54dSvr4EMB25-Cxwu8v72l0I&chrome_unique=57023280"} volume={volume / 100} muted={false} onTimeUpdate={handleTimeUpdate} onLoadedMetadata={handleLoadedMetadata} />
               Your browser does not support the video tag.
             </video>
 
@@ -250,6 +250,13 @@ function MuseumVideos() {
           <div className="up-next-videos">
                   <ul class="thumbnail-list">
                     <li>
+                      <VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC'/>
+                      <VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC'/>
+                      <VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC'/>
+                      <VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC'/>
+                      <VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC'/>
+                      <VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC'/>
+                      <VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC'/>
                       <VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC'/>
                     </li>
 

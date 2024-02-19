@@ -11,37 +11,38 @@
 }
 
 
+html{
+    background-color: aliceblue;
+}
+
+
 .flex-container {
     margin-top: -100px;
     margin: 0px;
     display: flex;
+    background-color: greenyellow;
 }
 
 @media (min-width: 768px) {
     .video-panel {
         display: inline-block;
         width: 73%;
-        /*background-color: lightcoral;*/
+        /*background-color: lightcoral;
         /* background: linear-gradient(to bottom, #f3f3f3, #ccc); */
         background-color: white;
         height: 100vh;
-
     }
-}
 
-@media (max-width: 767px) {
-    .video-panel {
-        display: block;
-        width: 100%;
-        /*background-color: lightcoral;*/
-        /* background: linear-gradient(to bottom, #f3f3f3, #ccc); */
-        background-color: white;
-        height: 100vh;
-
+    .video-container{
+        background-color: black;
     }
-}
 
-@media (min-width: 768px) {
+
+    video{
+        max-height: 100%;
+        background-color: black;
+    }
+
     .up-next {
         display: inline-block;
         height: 100vh;
@@ -51,9 +52,29 @@
         padding: 0px;
 
     }
+
 }
 
 @media (max-width: 767px) {
+    .video-panel {
+        display: block;
+        /* width: 100%; */
+        /*background-color: lightcoral;*/
+        /* background: linear-gradient(to bottom, #f3f3f3, #ccc); */
+        background-color: white;
+        height: 100vh;
+    }
+
+    .video-container{
+        background-color: black;
+    }
+
+
+    video{
+        max-height: 10vh;
+        background-color: black;
+    }
+
     .up-next {
         display: inline-block;
         height: 100vh;
@@ -61,9 +82,12 @@
         background-color: white;
         position: absolute;
         padding: 0px;
-
     }
+
+
+
 }
+
 
 
 
@@ -139,7 +163,9 @@
         bottom: 2.7vw;
     }
 
-
+    .video-title {
+        font-size: 1.5vw;
+    }
 
 }
 
@@ -149,7 +175,7 @@
 @media (max-width: 768px) {
     .video-container {
         width: 80vw;
-        height: 45vw;
+        height: 110vw;
         display: inline-block;
         margin-top: 1vh;
         position: relative;
@@ -186,7 +212,9 @@
         margin-right: 0.1vw;
     }
 
-
+    .video-title {
+        font-size: 2vh;
+    }
 
     .timeline {
         bottom: 2vw;
@@ -328,7 +356,6 @@ select option {
 
 .video-title {
     display: block;
-    font-size: 1.5vw;
     letter-spacing: 1px;
     line-height: 16.5px;
     /* text-transform: uppercase; */
