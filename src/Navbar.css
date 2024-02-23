@@ -33,21 +33,16 @@ html{
 .Header-nav-inner{
   margin-top: 6px;
   margin-left: 215px;
+
 }
 
 .Header-nav-item{
   margin-left: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   display: flex;
   float: left;
   white-space: nowrap;
-  overflow: none;
-}
-
-@media (max-width:700px){
-  .Header-nav-item {
-    display: none;
-  }
+  overflow: hidden;
 }
 
 
@@ -60,7 +55,7 @@ html{
 }
 
 
-a{
+.Header-inner a{
   padding: 6px;
   font-size: 11px;
   letter-spacing: 1px;
@@ -81,43 +76,43 @@ a:hover{
 
 
 
-/* Logo controls */
-.Header-branding-logo {
-  display: block;
-  width: 200px;
-  height: auto;
-  margin-left: 0px;
-  position: absolute;
-  margin: 0px;
-  padding: 0px;
-  margin-right: 15px;
-  margin-top: -5.5px;
-}
-
 @media (max-width:700px){
+
+
+  .Header-nav-item {
+    display: none;
+  }
+  
+  /* Logo controls */
   .Header-branding-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-  }
+    display: block;
+    width: 200px;
+    height: auto;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    left: calc(50vw - 100px);
+    margin-right: 15px;
+    margin-top: -5.5px;
 
-  .Header--top img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 20%;
   }
-
 
 }
 
-@media (min-width:1000px){
+@media (min-width:700px){
+
+    /* Logo controls */
   .Header-branding-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
+    display: block;
+    width: 200px;
+    height: auto;
+    margin-left: 0px;
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    margin-right: 15px;
+    margin-top: -5.5px;
+
   }
 }
 

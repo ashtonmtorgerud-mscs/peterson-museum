@@ -24,14 +24,27 @@ html{
 
 @media (min-width: 768px) {
     .videos-list{
-        margin: 5% 10% 5% 10%;
+        margin: 5% 12% 5% 12%;
     }
+
+
+    .videos-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%; /* Set a fixed width for the list */
+      }
+      
+      .VideoCatalogItem {
+        width: calc(30% - 20px); /* Adjust the width of each item to fit 3 items per row */
+        margin: 10px; /* Add margin to create space between items */
+      }
 }
 
 
 @media (max-width: 767px) {
     .videos-list{
-        margin: 5% 0% 5% 10%;
+        margin: 5% 15% 5% 10%;
     }
 }
 
