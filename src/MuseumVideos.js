@@ -23,6 +23,7 @@ import Thumbnail13 from './Videos/Thumbnail13.png';
 import Thumbnail14 from './Videos/Thumbnail14.png';
 import Thumbnail15 from './Videos/Thumbnail15.png';
 
+
 import Video1 from './Videos/Video1.mp4';
 import Video2 from './Videos/Video2.mp4';
 import Video3 from './Videos/Video3.mp4';
