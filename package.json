@@ -1,5 +1,5 @@
 {
-  "homepage": "https://ashtonmtorgerud-mscs.github.io",
+  "homepage": "https://ashtonmtorgerud-mscs.github.io/peterson-museum",
   "name": "peterson-museum",
   "version": "0.1.0",
   "private": true,
@@ -21,12 +21,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
+
   "browserslist": {
     "production": [
       ">0.2%",
