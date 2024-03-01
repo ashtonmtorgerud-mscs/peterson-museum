@@ -10,7 +10,7 @@ function App() {
   return (
     
     <HashRouter>
-      { <Navbar /> }
+      <Navbar />
       <Routes>
         <Route exact path='/'  />
           <Route path="/MuseumVideos/:id" element={<MuseumVideos/>} />
