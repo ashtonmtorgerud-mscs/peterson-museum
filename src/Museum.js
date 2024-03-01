@@ -4,8 +4,7 @@ import FileReadWriteComponent from "./FileReadWriteComponent";
 function Museum() {
   return (
     <div className="root">
-        <Navbar /> 
-        
+        <h3>TEST</h3>
     </div>
   );
 }
