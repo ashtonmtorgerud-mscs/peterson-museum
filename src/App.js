@@ -13,9 +13,9 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path='/' element={<Museum/>} />
-          <Route path="/peterson-museum/MuseumVideos/:id" element={<MuseumVideos/>} />
-          <Route path="/peterson-museum/Schedule" element={<Schedule/>} />
-          <Route path="/peterson-museum/VideoCatalog" element={<VideoCatalog/>} />
+          <Route path="/MuseumVideos/:id" element={<MuseumVideos/>} />
+          <Route path="/Schedule" element={<Schedule/>} />
+          <Route path="/VideoCatalog" element={<VideoCatalog/>} />
           {/* Add more routes for other subpages */}
         </Routes>
     </HashRouter>
