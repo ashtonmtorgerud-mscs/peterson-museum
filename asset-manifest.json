@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/peterson-museum/static/css/main.86c360f8.css",
+    "main.js": "/peterson-museum/static/js/main.33f7e1e1.js",
+    "static/js/453.8724c562.chunk.js": "/peterson-museum/static/js/453.8724c562.chunk.js",
+    "static/media/Video10.mp4": "/peterson-museum/static/media/Video10.17c2774b206b45e5fac7.mp4",
+    "static/media/Video8.mp4": "/peterson-museum/static/media/Video8.951a0eaed99d13d81274.mp4",
+    "static/media/Video1.mp4": "/peterson-museum/static/media/Video1.1c7b592a8a45281858d3.mp4",
+    "static/media/Video3.mp4": "/peterson-museum/static/media/Video3.e62d6637ab19b966e95f.mp4",
+    "static/media/Video14.mp4": "/peterson-museum/static/media/Video14.e83d5d9438c5c811c4c9.mp4",
+    "static/media/Video15.mp4": "/peterson-museum/static/media/Video15.16184e3b05e7e93c9963.mp4",
+    "static/media/Video2.mp4": "/peterson-museum/static/media/Video2.a4091fefe0dd76acf2c4.mp4",
+    "static/media/Video7.mp4": "/peterson-museum/static/media/Video7.bb3b4ae98c875e03f1f9.mp4",
+    "static/media/Video4.mp4": "/peterson-museum/static/media/Video4.e0b3b4c194f4606dad9d.mp4",
+    "static/media/Video11.mp4": "/peterson-museum/static/media/Video11.7aeaa910159150b3dac6.mp4",
+    "static/media/Thumbnail7.png": "/peterson-museum/static/media/Thumbnail7.6c9c66557eeee8f35011.png",
+    "static/media/Thumbnail14.png": "/peterson-museum/static/media/Thumbnail14.ade026305bac51311b8b.png",
+    "static/media/Thumbnail3.png": "/peterson-museum/static/media/Thumbnail3.bae281fcb8fd2c8eacbe.png",
+    "static/media/Thumbnail8.png": "/peterson-museum/static/media/Thumbnail8.d7e4d65ad7c614636bb8.png",
+    "static/media/Thumbnail15.png": "/peterson-museum/static/media/Thumbnail15.bf1f9269a36881e7ea0b.png",
+    "static/media/Thumbnail10.png": "/peterson-museum/static/media/Thumbnail10.d000753e954a38b2232e.png",
+    "static/media/Thumbnail13.png": "/peterson-museum/static/media/Thumbnail13.2d5be8d8d5416fb2ccfd.png",
+    "static/media/Thumbnail12.png": "/peterson-museum/static/media/Thumbnail12.2fedc8d636a9eb26a20f.png",
+    "static/media/Thumbnail5.png": "/peterson-museum/static/media/Thumbnail5.3ff0bb3fff375cd15e11.png",
+    "static/media/Thumbnail9.png": "/peterson-museum/static/media/Thumbnail9.6ead1f78cd24c73e0bbc.png",
+    "static/media/Thumbnail6.png": "/peterson-museum/static/media/Thumbnail6.81c3e5eeca4b9f208376.png",
+    "static/media/Thumbnail1.png": "/peterson-museum/static/media/Thumbnail1.0715a3eeeeef0d57fbb5.png",
+    "static/media/Thumbnail4.png": "/peterson-museum/static/media/Thumbnail4.7ec9f3d9106a2b659b04.png",
+    "static/media/Thumbnail2.png": "/peterson-museum/static/media/Thumbnail2.c7d86c71cedffce7c218.png",
+    "static/media/Thumbnail11.png": "/peterson-museum/static/media/Thumbnail11.ce829f4bf43a9270814b.png",
+    "static/media/TestVideo.mp4": "/peterson-museum/static/media/TestVideo.63fa9262ddfc79c4a40d.mp4",
+    "static/media/PatrickEyes.png": "/peterson-museum/static/media/PatrickEyes.39f47eaa83b7dc6fe09f.png",
+    "index.html": "/peterson-museum/index.html",
+    "main.86c360f8.css.map": "/peterson-museum/static/css/main.86c360f8.css.map",
+    "main.33f7e1e1.js.map": "/peterson-museum/static/js/main.33f7e1e1.js.map",
+    "453.8724c562.chunk.js.map": "/peterson-museum/static/js/453.8724c562.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86c360f8.css",
+    "static/js/main.33f7e1e1.js"
+  ]
+}
