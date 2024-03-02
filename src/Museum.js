@@ -4,10 +4,10 @@ import FileReadWriteComponent from "./FileReadWriteComponent";
 
 function Museum() {
   return (
-    <div className="root">
+    <div className="root-home">
       <div className="HomescreenOne">
-        <h1>Welcome to the Peterson Museum →</h1>
-        <a href="/"><div className="explore-button"><h3>Explore</h3></div></a>
+        <h1 className="homepage-title">Welcome to the Peterson Museum →</h1>
+        <a href="/peterson-museum/VideoCatalog"><div className="explore-button"><h3>Explore</h3></div></a>
       </div>
     </div>
   );

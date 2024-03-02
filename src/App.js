@@ -17,6 +17,8 @@ function App() {
           <Route path="/Schedule" element={<Schedule/>} />
           <Route path="/VideoCatalog" element={<VideoCatalog/>} />
           {/* Add more routes for other subpages */}
+          <Route path='*' element={<h1>Error 404: Page not found</h1>} />
+
         </Routes>
     </HashRouter>
   );

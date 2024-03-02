@@ -104,11 +104,11 @@ function Navbar() {
 
                     <a href="/Schedule" class="Header-nav-folder-item" >Schedule</a>
 
-                    <a href="https://www.petersonmn.com/rv-campground" class="Header-nav-folder-item" >Exhibitions</a>
+                    <a href="https://www.petersonmn.com/rv-campground" class="Header-nav-folder-item" >About Us</a>
 
-                    <a href="https://www.petersonmn.com/lodging" class="Header-nav-folder-item">Records</a>
+                    {/* <a href="https://www.petersonmn.com/lodging" class="Header-nav-folder-item">Records</a> */}
 
-                    <a href="https://www.petersonmn.com/things-to-do" class="Header-nav-folder-item">Support</a>
+                    <a href="https://www.petersonmn.com/things-to-do" class="Header-nav-folder-item">Contact</a>
 
                   </span>
                 </span>

@@ -333,7 +333,7 @@ function MuseumVideos() {
                     </li>
                   </ul>
           </div>
-          <h1 className="up-next-text">Previous Videos: </h1>
+          <h1 className="up-next-text" style={vidID == 1 ? {display: "none"} : {}}>Previous Videos: </h1>
           <div className="up-next-videos">
                     <ul class="thumbnail-list">
                       <li>

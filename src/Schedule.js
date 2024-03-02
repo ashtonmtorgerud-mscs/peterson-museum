@@ -150,7 +150,7 @@ const Schedule = (props) => {
 
 
             <div className="introParagraph">
-                <h2>This is a test</h2>
+                <h2>Our Schedule</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac pharetra tellus. Nullam interdum lacus at cursus malesuada. Pellentesque consequat augue eu urna facilisis commodo. Mauris consectetur, mauris vel semper iaculis, libero elit efficitur lorem, ac tincidunt justo lectus in mauris.</p>
 
                 <div className="gap"></div>
