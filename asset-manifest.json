@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/peterson-museum/static/css/main.86c360f8.css",
-    "main.js": "/peterson-museum/static/js/main.33f7e1e1.js",
+    "main.css": "/peterson-museum/static/css/main.40528ba0.css",
+    "main.js": "/peterson-museum/static/js/main.989a8eb9.js",
     "static/js/453.8724c562.chunk.js": "/peterson-museum/static/js/453.8724c562.chunk.js",
     "static/media/Video10.mp4": "/peterson-museum/static/media/Video10.17c2774b206b45e5fac7.mp4",
     "static/media/Video8.mp4": "/peterson-museum/static/media/Video8.951a0eaed99d13d81274.mp4",
@@ -13,6 +13,7 @@
     "static/media/Video7.mp4": "/peterson-museum/static/media/Video7.bb3b4ae98c875e03f1f9.mp4",
     "static/media/Video4.mp4": "/peterson-museum/static/media/Video4.e0b3b4c194f4606dad9d.mp4",
     "static/media/Video11.mp4": "/peterson-museum/static/media/Video11.7aeaa910159150b3dac6.mp4",
+    "static/media/MuseumBackground.png": "/peterson-museum/static/media/MuseumBackground.0a73653939f577425b1a.png",
     "static/media/Thumbnail7.png": "/peterson-museum/static/media/Thumbnail7.6c9c66557eeee8f35011.png",
     "static/media/Thumbnail14.png": "/peterson-museum/static/media/Thumbnail14.ade026305bac51311b8b.png",
     "static/media/Thumbnail3.png": "/peterson-museum/static/media/Thumbnail3.bae281fcb8fd2c8eacbe.png",
@@ -31,12 +32,12 @@
     "static/media/TestVideo.mp4": "/peterson-museum/static/media/TestVideo.63fa9262ddfc79c4a40d.mp4",
     "static/media/PatrickEyes.png": "/peterson-museum/static/media/PatrickEyes.39f47eaa83b7dc6fe09f.png",
     "index.html": "/peterson-museum/index.html",
-    "main.86c360f8.css.map": "/peterson-museum/static/css/main.86c360f8.css.map",
-    "main.33f7e1e1.js.map": "/peterson-museum/static/js/main.33f7e1e1.js.map",
+    "main.40528ba0.css.map": "/peterson-museum/static/css/main.40528ba0.css.map",
+    "main.989a8eb9.js.map": "/peterson-museum/static/js/main.989a8eb9.js.map",
     "453.8724c562.chunk.js.map": "/peterson-museum/static/js/453.8724c562.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.86c360f8.css",
-    "static/js/main.33f7e1e1.js"
+    "static/css/main.40528ba0.css",
+    "static/js/main.989a8eb9.js"
   ]
 }
