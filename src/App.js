@@ -14,6 +14,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Museum/>} />
           <Route path="/MuseumVideos/:id" element={<MuseumVideos/>} />
+          <Route path="/peterson-museum" element={<Museum/>} />
           <Route path="/Schedule" element={<Schedule/>} />
           <Route path="/VideoCatalog" element={<VideoCatalog/>} />
           {/* Add more routes for other subpages */}
