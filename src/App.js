@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as HashRouter, Routes, Route,  } from 'react-router-dom';
+import { HashRouter as HashRouter, Routes, Route,  } from 'react-router-dom';
 import Museum from './Museum';
 import Schedule from './Schedule';
 import Navbar from "./Navbar";
