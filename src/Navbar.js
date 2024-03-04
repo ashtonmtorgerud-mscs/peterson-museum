@@ -96,15 +96,15 @@ function Navbar() {
 
                 <span class="Header-nav-item Header-nav-item--folder">
 
-                  <a href="/" class="Header-nav-folder-title" >Museum</a>
+                  <a href="/peterson-museum/" class="Header-nav-folder-title" >Museum</a>
 
                   <span class="Header-nav-folder">
 
-                    <a href="/#/VideoCatalog" class="Header-nav-folder-item" >Videos</a>
+                    <a href="/peterson-museum/#/VideoCatalog" class="Header-nav-folder-item" >Videos</a>
 
-                    <a href="/#/Schedule" class="Header-nav-folder-item" >Schedule</a>
+                    <a href="/peterson-museum/#/Schedule" class="Header-nav-folder-item" >Schedule</a>
 
-                    <a href="/#/AboutUs" class="Header-nav-folder-item" >About Us</a>
+                    <a href="/peterson-museum/#/AboutUs" class="Header-nav-folder-item" >About Us</a>
 
                     {/* <a href="https://www.petersonmn.com/lodging" class="Header-nav-folder-item">Records</a> */}
 
