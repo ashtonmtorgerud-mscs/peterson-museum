@@ -37,21 +37,21 @@ function VideoCatalog() {
       <div className="up-next-videos">
         <ul class="videos-list">
           <li>
-            <a href="/#/MuseumVideos/1"> <VideoCatalogItem thumbnail={image1} title='Museum Vid 1' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/2"> <VideoCatalogItem thumbnail={image2} title='Museum Vid 2' description='Once upon a time I was looking at a squirrel when he said I had a bad haircut so I felt bad and petitioned for the death of all squirrels, which was successful. There are now no more squirrels' /></a>
-            <a href="/#/MuseumVideos/3"> <VideoCatalogItem thumbnail={image3} title='Museum Vid 3' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/4"> <VideoCatalogItem thumbnail={image4} title='Museum Vid 4' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/5"> <VideoCatalogItem thumbnail={image5} title='Museum Vid 5' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/6"> <VideoCatalogItem thumbnail={image6} title='Museum Vid 6' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/7"> <VideoCatalogItem thumbnail={image7} title='Museum Vid 7' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/8"> <VideoCatalogItem thumbnail={image8} title='Museum Vid 8' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/9"> <VideoCatalogItem thumbnail={image9} title='Museum Vid 9' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/10"> <VideoCatalogItem thumbnail={image10} title='Museum Vid 10' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/11"> <VideoCatalogItem thumbnail={image11} title='Museum Vid 11' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/12"> <VideoCatalogItem thumbnail={image12} title='Museum Vid 12' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/13"> <VideoCatalogItem thumbnail={image13} title='Museum Vid 13' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/14"> <VideoCatalogItem thumbnail={image14} title='Museum Vid 14' description='lorus ipsum something something IDRC' /></a>
-            <a href="/#/MuseumVideos/15"> <VideoCatalogItem thumbnail={image15} title='Museum Vid 15' description='lorus ipsum something something IDRC' /></a>
+            <a href="/#/MuseumVideos/1"> <VideoCatalogItem thumbnail={image1} title='Museum Vid 1' description='Museum Vid 1 Description' /></a>
+            <a href="/#/MuseumVideos/2"> <VideoCatalogItem thumbnail={image2} title='Museum Vid 2' description='Museum Vid 2 Description' /></a>
+            <a href="/#/MuseumVideos/3"> <VideoCatalogItem thumbnail={image3} title='Museum Vid 3' description='Museum Vid 3 Description' /></a>
+            <a href="/#/MuseumVideos/4"> <VideoCatalogItem thumbnail={image4} title='Museum Vid 4' description='Museum Vid 4 Description' /></a>
+            <a href="/#/MuseumVideos/5"> <VideoCatalogItem thumbnail={image5} title='Museum Vid 5' description='Museum Vid 5 Description' /></a>
+            <a href="/#/MuseumVideos/6"> <VideoCatalogItem thumbnail={image6} title='Museum Vid 6' description='Museum Vid 6 Description' /></a>
+            <a href="/#/MuseumVideos/7"> <VideoCatalogItem thumbnail={image7} title='Museum Vid 7' description='Museum Vid 7 Description' /></a>
+            <a href="/#/MuseumVideos/8"> <VideoCatalogItem thumbnail={image8} title='Museum Vid 8' description='Museum Vid 8 Description' /></a>
+            <a href="/#/MuseumVideos/9"> <VideoCatalogItem thumbnail={image9} title='Museum Vid 9' description='Museum Vid 9 Description' /></a>
+            <a href="/#/MuseumVideos/10"> <VideoCatalogItem thumbnail={image10} title='Museum Vid 10' description='Museum Vid 10 Description' /></a>
+            <a href="/#/MuseumVideos/11"> <VideoCatalogItem thumbnail={image11} title='Museum Vid 11' description='Museum Vid 11 Description' /></a>
+            <a href="/#/MuseumVideos/12"> <VideoCatalogItem thumbnail={image12} title='Museum Vid 12' description='Museum Vid 12 Description' /></a>
+            <a href="/#/MuseumVideos/13"> <VideoCatalogItem thumbnail={image13} title='Museum Vid 13' description='Museum Vid 13 Description' /></a>
+            <a href="/#/MuseumVideos/14"> <VideoCatalogItem thumbnail={image14} title='Museum Vid 14' description='Museum Vid 14 Description' /></a>
+            <a href="/#/MuseumVideos/15"> <VideoCatalogItem thumbnail={image15} title='Museum Vid 15' description='Museum Vid 15 Description' /></a>
 
           </li>
         </ul>
