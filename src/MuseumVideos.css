@@ -5,6 +5,11 @@
 }
 
 
+body{
+    overflow-x: hidden;
+}
+
+
 .barrier {
     display: block;
     height: 3vh;
@@ -397,5 +402,6 @@ select option {
     padding: 0.25vw 1vw;
     border-radius: 12px;
     width: 64.25vw;
+    height: auto;
     outline: 1px gray solid;
 }

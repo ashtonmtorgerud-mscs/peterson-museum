@@ -65,7 +65,7 @@ const Schedule = (props) => {
         // Create an object with holiday dates as keys and holiday names as values
         var holidays = {
           '01-01': "New Year\'s Day",
-          '02-01': "First of Febuary",
+          '03-20': "First Day of Spring",
           '02-14': "Valentine's Day",
           '03-31': "Easter Day",
           '07-04': "Independence Dayy",
@@ -74,7 +74,7 @@ const Schedule = (props) => {
 
         var holidaysTimes = {
             '01-01': "Closed for New Year\'s Day",
-            '02-01': "Open by appointment",
+            '03-20': "Open by appointment",
             '02-14': "Closed for Valentine's day",
             '03-31': "Closed for Easter",
             '07-04': "Closed for Independence Day",
@@ -144,14 +144,14 @@ const Schedule = (props) => {
 
 
     return (
-        <div className="root">
+        <div className="root-schedule">
 
             <div className="barrier"></div>
 
 
             <div className="introParagraph">
                 <h2>Our Schedule</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ac pharetra tellus. Nullam interdum lacus at cursus malesuada. Pellentesque consequat augue eu urna facilisis commodo. Mauris consectetur, mauris vel semper iaculis, libero elit efficitur lorem, ac tincidunt justo lectus in mauris.</p>
+                <p>Here you can see when on what days we're available for appointments or events.</p>
 
                 <div className="gap"></div>
             </div>

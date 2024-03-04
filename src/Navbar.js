@@ -100,11 +100,11 @@ function Navbar() {
 
                   <span class="Header-nav-folder">
 
-                    <a href="/VideoCatalog" class="Header-nav-folder-item" >Videos</a>
+                    <a href="/#/VideoCatalog" class="Header-nav-folder-item" >Videos</a>
 
-                    <a href="/Schedule" class="Header-nav-folder-item" >Schedule</a>
+                    <a href="/#/Schedule" class="Header-nav-folder-item" >Schedule</a>
 
-                    <a href="https://www.petersonmn.com/rv-campground" class="Header-nav-folder-item" >About Us</a>
+                    <a href="/#/AboutUs" class="Header-nav-folder-item" >About Us</a>
 
                     {/* <a href="https://www.petersonmn.com/lodging" class="Header-nav-folder-item">Records</a> */}
 

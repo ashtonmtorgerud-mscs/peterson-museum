@@ -1,0 +1,73 @@
+.root-footer{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #dc215d;
+    height: 300px;
+    position: relative;
+    display: block;
+}
+
+.root-footer h3{
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+    color: white;
+    padding: 3% 0 0 0;
+    font-size: auto;
+    margin-bottom: 0;
+}
+
+.root-footer a{
+    color: white;
+    text-decoration: underline;
+}
+
+.root-footer p{
+    width: 40%;
+    text-align: center;
+    margin-left: 30%;
+    color: white;
+    padding-top: 0%;
+    font-size: auto;
+}
+
+
+.root-error{
+    background-image: url(https://images.pexels.com/photos/3151908/pexels-photo-3151908.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(66vh * 1.25);
+    padding: 1px;
+    margin: 0px 0px -20px 0px;
+}
+
+.root-error h3{
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    color: white;
+    padding: 0 0 0 0;
+    margin-top: 3%;
+    font-size: auto;
+    margin-bottom: 0;
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    text-shadow: 1px 1px 4px black, 1px 1px 4px black;
+}
+
+.root-error p{
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    color: white;
+    padding: 0 0 0 0;
+    margin-top: 3%;
+    font-size: auto;
+    margin-bottom: 0;
+    font-size: 2.5vw;
+    line-height: 2.5vw;
+    text-shadow: 1px 1px 4px black, 1px 1px 4px black;
+    font-weight: bold;
+}

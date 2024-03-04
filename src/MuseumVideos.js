@@ -29,14 +29,21 @@ import Video2 from './Videos/Video2.mp4';
 import Video3 from './Videos/Video3.mp4';
 import Video4 from './Videos/Video4.mp4';
 // import Video5 from './Videos/Video5.mp4';
+import Video5 from './TestVideo.mp4';
 // import Video6 from './Videos/Video6.mp4';
+import Video6 from './TestVideo.mp4';
+
 import Video7 from './Videos/Video7.mp4';
 import Video8 from './Videos/Video8.mp4';
 // import Video9 from './Videos/Video9.mp4';
+import Video9 from './TestVideo.mp4';
+
 import Video10 from './Videos/Video10.mp4';
 import Video11 from './Videos/Video11.mp4';
 // import Video12 from './Videos/Video12.mp4';
+import Video12 from './TestVideo.mp4';
 // import Video13 from './Videos/Video13.mp4';
+import Video13 from './TestVideo.mp4';
 import Video14 from './Videos/Video14.mp4';
 import Video15 from './Videos/Video15.mp4';
 
@@ -61,7 +68,7 @@ function MuseumVideos() {
   "This is a Test Video"
 
   const titles = ["This is a test video", "1. Military Memorabilia", "2. Church Plates", "3. World War 1 Plates", "4. Our Saviors Church Items"];
-  const description = ["If you're seeing this, you were probably messing arond with the link. Try another video id or use the vatalog for a proper video",
+  const description = ["If you're seeing this, you were probably messing arond with the link. Try another video id or use the vatalog for a proper video.",
   "Check out these antique pieces of history including volumes, photos, and pillowcases made by the Boyum family",
   "View a collection of church plates from a selection of local churches. Along with the Norwegian-American Centennial, and more",
   "See this collection of WWI plates and books of servicemen from WWI, WWII, and the Korean War.",
@@ -245,6 +252,13 @@ function MuseumVideos() {
 
 
 
+  window.addEventListener('hashchange', function() {
+    location.reload();
+  });
+  
+
+
+
   return (
 
     <div className="root">
@@ -315,21 +329,21 @@ function MuseumVideos() {
           <div className="up-next-videos">
                   <ul class="thumbnail-list">
                     <li>
-                      <a href="/MuseumVideos/1" style={vidID >= 1 ? {display: "none"} : {}}><VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC' image={Thumbnail1} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/2" style={vidID >= 2 ? {display: "none"} : {}}><VideoItem title='Museum Vid 2' description='lorus ipsum something something IDRC' image={Thumbnail2} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/3" style={vidID >= 3 ? {display: "none"} : {}}><VideoItem title='Museum Vid 3' description='lorus ipsum something something IDRC' image={Thumbnail3} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/4" style={vidID >= 4 ? {display: "none"} : {}}><VideoItem title='Museum Vid 4' description='lorus ipsum something something IDRC' image={Thumbnail4} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/5" style={vidID >= 5 ? {display: "none"} : {}}><VideoItem title='Museum Vid 5' description='lorus ipsum something something IDRC' image={Thumbnail5} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/6" style={vidID >= 6 ? {display: "none"} : {}}><VideoItem title='Museum Vid 6' description='lorus ipsum something something IDRC' image={Thumbnail6} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/7" style={vidID >= 7 ? {display: "none"} : {}}><VideoItem title='Museum Vid 7' description='lorus ipsum something something IDRC' image={Thumbnail7} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/8" style={vidID >= 8 ? {display: "none"} : {}}><VideoItem title='Museum Vid 8' description='lorus ipsum something something IDRC' image={Thumbnail8} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/9" style={vidID >= 9 ? {display: "none"} : {}}><VideoItem title='Museum Vid 9' description='lorus ipsum something something IDRC' image={Thumbnail9} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/10" style={vidID >= 10 ? {display: "none"} : {}}><VideoItem title='Museum Vid 10' description='lorus ipsum something something IDRC' image={Thumbnail10} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/11" style={vidID >= 11 ? {display: "none"} : {}}><VideoItem title='Museum Vid 11' description='lorus ipsum something something IDRC' image={Thumbnail11} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/12" style={vidID >= 12 ? {display: "none"} : {}}><VideoItem title='Museum Vid 12' description='lorus ipsum something something IDRC' image={Thumbnail12} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/13" style={vidID >= 13 ? {display: "none"} : {}}><VideoItem title='Museum Vid 13' description='lorus ipsum something something IDRC' image={Thumbnail13} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/14" style={vidID >= 14 ? {display: "none"} : {}}><VideoItem title='Museum Vid 14' description='lorus ipsum something something IDRC' image={Thumbnail14} background='rgb(137, 118, 108)'/></a>
-                      <a href="/MuseumVideos/15" style={vidID >= 15 ? {display: "none"} : {}}><VideoItem title='Museum Vid 15' description='lorus ipsum something something IDRC' image={Thumbnail15} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/1" style={vidID >= 1 ? {display: "none"} : {}}><VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC' image={Thumbnail1} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/2" style={vidID >= 2 ? {display: "none"} : {}}><VideoItem title='Museum Vid 2' description='lorus ipsum something something IDRC' image={Thumbnail2} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/3" style={vidID >= 3 ? {display: "none"} : {}}><VideoItem title='Museum Vid 3' description='lorus ipsum something something IDRC' image={Thumbnail3} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/4" style={vidID >= 4 ? {display: "none"} : {}}><VideoItem title='Museum Vid 4' description='lorus ipsum something something IDRC' image={Thumbnail4} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/5" style={vidID >= 5 ? {display: "none"} : {}}><VideoItem title='Museum Vid 5' description='lorus ipsum something something IDRC' image={Thumbnail5} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/6" style={vidID >= 6 ? {display: "none"} : {}}><VideoItem title='Museum Vid 6' description='lorus ipsum something something IDRC' image={Thumbnail6} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/7" style={vidID >= 7 ? {display: "none"} : {}}><VideoItem title='Museum Vid 7' description='lorus ipsum something something IDRC' image={Thumbnail7} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/8" style={vidID >= 8 ? {display: "none"} : {}}><VideoItem title='Museum Vid 8' description='lorus ipsum something something IDRC' image={Thumbnail8} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/9" style={vidID >= 9 ? {display: "none"} : {}}><VideoItem title='Museum Vid 9' description='lorus ipsum something something IDRC' image={Thumbnail9} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/10" style={vidID >= 10 ? {display: "none"} : {}}><VideoItem title='Museum Vid 10' description='lorus ipsum something something IDRC' image={Thumbnail10} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/11" style={vidID >= 11 ? {display: "none"} : {}}><VideoItem title='Museum Vid 11' description='lorus ipsum something something IDRC' image={Thumbnail11} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/12" style={vidID >= 12 ? {display: "none"} : {}}><VideoItem title='Museum Vid 12' description='lorus ipsum something something IDRC' image={Thumbnail12} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/13" style={vidID >= 13 ? {display: "none"} : {}}><VideoItem title='Museum Vid 13' description='lorus ipsum something something IDRC' image={Thumbnail13} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/14" style={vidID >= 14 ? {display: "none"} : {}}><VideoItem title='Museum Vid 14' description='lorus ipsum something something IDRC' image={Thumbnail14} background='rgb(137, 118, 108)'/></a>
+                      <a href="/#/MuseumVideos/15" style={vidID >= 15 ? {display: "none"} : {}}><VideoItem title='Museum Vid 15' description='lorus ipsum something something IDRC' image={Thumbnail15} background='rgb(137, 118, 108)'/></a>
                     </li>
                   </ul>
           </div>
@@ -337,21 +351,21 @@ function MuseumVideos() {
           <div className="up-next-videos">
                     <ul class="thumbnail-list">
                       <li>
-                        <a href="/MuseumVideos/1" style={vidID <= 1 ? {display: "none"} : {}}><VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC' image={Thumbnail1} background='rgb(137, 118, 108)'/></a>
-                        <a href="/MuseumVideos/2" style={vidID <= 2 ? {display: "none"} : {}}><VideoItem title='Museum Vid 2' description='lorus ipsum something something IDRC' image={Thumbnail2} background='rgb(137, 118, 108)'/></a>
-                        <a href="/MuseumVideos/3" style={vidID <= 3 ? {display: "none"} : {}}><VideoItem title='Museum Vid 3' description='lorus ipsum something something IDRC' image={Thumbnail3} background='rgb(137, 118, 108)'/></a>
-                        <a href="/MuseumVideos/4" style={vidID <= 4 ? {display: "none"} : {}}><VideoItem title='Museum Vid 4' description='lorus ipsum something something IDRC' image={Thumbnail4} background='rgb(137, 118, 108)'/></a>
-                        {/* <a href="/MuseumVideos/5" style={vidID <= 5 ? {display: "none"} : {}}><VideoItem title='Museum Vid 5' description='lorus ipsum something something IDRC' image={Thumbnail5} background='rgb(137, 118, 108)'/></a> */}
-                        {/* <a href="/MuseumVideos/6" style={vidID <= 6 ? {display: "none"} : {}}><VideoItem title='Museum Vid 6' description='lorus ipsum something something IDRC' image={Thumbnail6} background='rgb(137, 118, 108)'/></a> */}
-                        <a href="/MuseumVideos/7" style={vidID <= 7 ? {display: "none"} : {}}><VideoItem title='Museum Vid 7' description='lorus ipsum something something IDRC' image={Thumbnail7} background='rgb(137, 118, 108)'/></a>
-                        <a href="/MuseumVideos/8" style={vidID <= 8 ? {display: "none"} : {}}><VideoItem title='Museum Vid 8' description='lorus ipsum something something IDRC' image={Thumbnail8} background='rgb(137, 118, 108)'/></a>
-                        {/* <a href="/MuseumVideos/9" style={vidID <= 9 ? {display: "none"} : {}}><VideoItem title='Museum Vid 9' description='lorus ipsum something something IDRC' image={Thumbnail9} background='rgb(137, 118, 108)'/></a> */}
-                        <a href="/MuseumVideos/10" style={vidID <= 10 ? {display: "none"} : {}}><VideoItem title='Museum Vid 10' description='lorus ipsum something something IDRC' image={Thumbnail10} background='rgb(137, 118, 108)'/></a>
-                        <a href="/MuseumVideos/11" style={vidID <= 11 ? {display: "none"} : {}}><VideoItem title='Museum Vid 11' description='lorus ipsum something something IDRC' image={Thumbnail11} background='rgb(137, 118, 108)'/></a>
-                        {/* <a href="/MuseumVideos/12" style={vidID <= 12 ? {display: "none"} : {}}><VideoItem title='Museum Vid 12' description='lorus ipsum something something IDRC' image={Thumbnail12} background='rgb(137, 118, 108)'/></a>
-                        <a href="/MuseumVideos/13" style={vidID <= 13 ? {display: "none"} : {}}><VideoItem title='Museum Vid 13' description='lorus ipsum something something IDRC' image={Thumbnail13} background='rgb(137, 118, 108)'/></a> */}
-                        <a href="/MuseumVideos/14" style={vidID <= 14 ? {display: "none"} : {}}><VideoItem title='Museum Vid 14' description='lorus ipsum something something IDRC' image={Thumbnail14} background='rgb(137, 118, 108)'/></a>
-                        <a href="/MuseumVideos/15" style={vidID <= 15 ? {display: "none"} : {}}><VideoItem title='Museum Vid 15' description='lorus ipsum something something IDRC' image={Thumbnail15} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/1" onClick={function() {window.location.reload();}} style={vidID <= 1 ? {display: "none"} : {}}><VideoItem title='Museum Vid 1' description='lorus ipsum something something IDRC' image={Thumbnail1} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/2" onClick={function() {window.location.reload();}} style={vidID <= 2 ? {display: "none"} : {}}><VideoItem title='Museum Vid 2' description='lorus ipsum something something IDRC' image={Thumbnail2} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/3" onClick={function() {window.location.reload();}} style={vidID <= 3 ? {display: "none"} : {}}><VideoItem title='Museum Vid 3' description='lorus ipsum something something IDRC' image={Thumbnail3} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/4" onClick={function() {window.location.reload();}} style={vidID <= 4 ? {display: "none"} : {}}><VideoItem title='Museum Vid 4' description='lorus ipsum something something IDRC' image={Thumbnail4} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/5" style={vidID <= 5 ? {display: "none"} : {}}><VideoItem title='Museum Vid 5' description='lorus ipsum something something IDRC' image={Thumbnail5} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/6" style={vidID <= 6 ? {display: "none"} : {}}><VideoItem title='Museum Vid 6' description='lorus ipsum something something IDRC' image={Thumbnail6} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/7" style={vidID <= 7 ? {display: "none"} : {}}><VideoItem title='Museum Vid 7' description='lorus ipsum something something IDRC' image={Thumbnail7} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/8" style={vidID <= 8 ? {display: "none"} : {}}><VideoItem title='Museum Vid 8' description='lorus ipsum something something IDRC' image={Thumbnail8} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/9" style={vidID <= 9 ? {display: "none"} : {}}><VideoItem title='Museum Vid 9' description='lorus ipsum something something IDRC' image={Thumbnail9} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/10" style={vidID <= 10 ? {display: "none"} : {}}><VideoItem title='Museum Vid 10' description='lorus ipsum something something IDRC' image={Thumbnail10} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/11" style={vidID <= 11 ? {display: "none"} : {}}><VideoItem title='Museum Vid 11' description='lorus ipsum something something IDRC' image={Thumbnail11} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/12" style={vidID <= 12 ? {display: "none"} : {}}><VideoItem title='Museum Vid 12' description='lorus ipsum something something IDRC' image={Thumbnail12} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/13" style={vidID <= 13 ? {display: "none"} : {}}><VideoItem title='Museum Vid 13' description='lorus ipsum something something IDRC' image={Thumbnail13} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/14" style={vidID <= 14 ? {display: "none"} : {}}><VideoItem title='Museum Vid 14' description='lorus ipsum something something IDRC' image={Thumbnail14} background='rgb(137, 118, 108)'/></a>
+                        <a href="/#/MuseumVideos/15" style={vidID <= 15 ? {display: "none"} : {}}> <VideoItem title='Museum Vid 15' description='lorus ipsum something something IDRC' image={Thumbnail15} background='rgb(137, 118, 108)'/></a>
                       </li>
                     </ul>
             </div>
