@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/peterson-museum/static/css/main.44b9acd1.css",
-    "main.js": "/peterson-museum/static/js/main.fcf89ee0.js",
+    "main.css": "/peterson-museum/static/css/main.925bc91c.css",
+    "main.js": "/peterson-museum/static/js/main.2b4c9ddb.js",
     "static/js/453.8724c562.chunk.js": "/peterson-museum/static/js/453.8724c562.chunk.js",
     "static/media/Video10.mp4": "/peterson-museum/static/media/Video10.17c2774b206b45e5fac7.mp4",
     "static/media/Video8.mp4": "/peterson-museum/static/media/Video8.951a0eaed99d13d81274.mp4",
@@ -32,12 +32,12 @@
     "static/media/TestVideo.mp4": "/peterson-museum/static/media/TestVideo.63fa9262ddfc79c4a40d.mp4",
     "static/media/PatrickEyes.png": "/peterson-museum/static/media/PatrickEyes.39f47eaa83b7dc6fe09f.png",
     "index.html": "/peterson-museum/index.html",
-    "main.44b9acd1.css.map": "/peterson-museum/static/css/main.44b9acd1.css.map",
-    "main.fcf89ee0.js.map": "/peterson-museum/static/js/main.fcf89ee0.js.map",
+    "main.925bc91c.css.map": "/peterson-museum/static/css/main.925bc91c.css.map",
+    "main.2b4c9ddb.js.map": "/peterson-museum/static/js/main.2b4c9ddb.js.map",
     "453.8724c562.chunk.js.map": "/peterson-museum/static/js/453.8724c562.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.44b9acd1.css",
-    "static/js/main.fcf89ee0.js"
+    "static/css/main.925bc91c.css",
+    "static/js/main.2b4c9ddb.js"
   ]
 }
